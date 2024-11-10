@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "jest": "^29.7.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.6.3"
+  },
+  "jest": {
+  "testMatch": ["**/tests/**/*.test.js"]
+}
+
+}
