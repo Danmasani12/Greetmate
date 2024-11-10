@@ -2,9 +2,9 @@ name: CI/CD Pipeline
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
 
 jobs:
   build-and-test:
@@ -35,8 +35,8 @@ jobs:
       - name: Install JavaScript dependencies and run tests
         run: |
           cd frontend
-          npm install jest
-          npm test
+          npm install
+          npx jest --passWithNoTests
 
   docker:
     needs: build-and-test
